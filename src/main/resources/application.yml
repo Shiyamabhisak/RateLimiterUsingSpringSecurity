@@ -1,1 +1,15 @@
-spring.application.name=springsecurityratelimiterapi
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt_security
+    username: waction
+    password: w@ct10n
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    propertis:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
